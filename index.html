@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Rating Component</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main class="rating-card" id="rating-state">
+      <div class="star-container">
+        <img src="./images/icon-star.svg" alt="star icon" />
+      </div>
+      <h2>How did we do?</h2>
+      <p>
+        Please let us know how we did with your support request. All feedback is
+        appreciated to help us improve our offering!
+      </p>
+      <div class="rating-container">
+        <button class="rating-btn" data-value="1">1</button>
+        <button class="rating-btn" data-value="2">2</button>
+        <button class="rating-btn" data-value="3">3</button>
+        <button class="rating-btn" data-value="4">4</button>
+        <button class="rating-btn" data-value="5">5</button>
+      </div>
+      <button class="submit-btn" id="submit-btn">SUBMIT</button>
+    </main>
+    <!-- Thank you card-->
+    <section class="rating-card thank-you-card hidden" id="thank-you-state">
+      <div class="thanks">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt="Thank you illustration"
+        />
+      </div>
+      <div class="selected-badge">
+        You selected <span id="selected-rating">0</span> out of 5
+      </div>
+      <h2>Thank you!</h2>
+      <p>
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don't hesitate to get in touch!
+      </p>
+    </section>
+  </body>
+</html>

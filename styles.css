@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: arial, sans-serif ;
+    background-color:rgb(6, 3, 27);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 1.5rem;
+}
+.rating-card{
+    background-color: rgb(27, 29, 48);
+    padding: 2rem;
+    border-radius: 1.8rem;
+   max-width: 400px;
+   width: 100%;
+}
+.star-container{
+    margin-bottom: 1.8rem;
+    background-color: rgb(48, 48, 61);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2 {
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 0.8rem;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+p{
+    color: hsl(217, 12%, 63%);
+    margin-bottom: 1.8rem;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+.rating-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+.rating-btn {
+    background-color: hsl(213, 19%, 23%);
+    color: hsl(217, 12%, 63%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.rating-btn:hover{
+    background-color:white;
+    color: black;
+}
+.rating-btn.active {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+.submit-btn{
+    background-color:  hsl(25, 97%, 53%);
+    color: black;
+    padding: 0.8rem;
+    width: 100%;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 700;
+    font-size: 0.95rem;
+    cursor: pointer;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.submit-btn:hover{
+    background-color: white;
+}
+.thank-you-card {
+    text-align: center;
+}
+.thank-you-card img {
+    margin: 0 auto 2rem auto;
+    display: block;
+}
+.selected-badge {
+    background-color: hsl(213, 19%, 23%);
+    color: hsl(25, 97%, 53%);
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
+.hidden {
+    display: none;
+}
