@@ -23,7 +23,7 @@ submitBtn.addEventListener("click", function() {
         selectedRatingText.textContent = selectedRatingValue;
         ratingCard.classList.add("hidden");
         thankYouCard.classList.remove("hidden");
-    } else {
+    }if (selectedRatingValue === 0 || selectedRatingValue === null) {
         alert("Please select a rating before submitting.");
     }
 });
